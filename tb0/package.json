@@ -1,0 +1,22 @@
+{
+  "name": "create-react-app-with-jss",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "latest",
+    "lodash": "latest",
+    "material-ui": "next",
+    "@material-ui/icons": "1.0.0-beta.42",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-scripts": "latest",
+    "react-router-dom": "latest"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
