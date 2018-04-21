@@ -125,10 +125,18 @@ function findActivePage(currentPages, url) {
 }
 
 const ShowChapterSection = ({ match }) => (
+<div>
+  <Typography type="display1" gutterBottom>
+    Florida
+  </Typography>
+  <Typography type="subheading" gutterBottom>
+    has 20 million people...
+  </Typography>
   <div>
     <h3>Chapter: {match.params.ch}</h3>
     <h4>Section: {match.params.sec}</h4>
   </div>
+</div>
 )
 
 class AppFrame extends React.Component {
@@ -207,13 +215,6 @@ class AppFrame extends React.Component {
           onOpen={this.handleDrawerOpen}
           mobileOpen={this.state.mobileOpen}
         />
-
-        <Typography type="display1" gutterBottom>
-          Florida
-        </Typography>
-        <Typography type="subheading" gutterBottom>
-          has 20 million people...
-        </Typography>
 
         <div style={{ flex: 1, padding: '10px' }}>
             <Route
