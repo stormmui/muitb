@@ -8,20 +8,11 @@ import Toolbar from 'material-ui/Toolbar';
 import IconButton from 'material-ui/IconButton';
 import Tooltip from 'material-ui/Tooltip';
 import MenuIcon from '@material-ui/icons/Menu';
-
-
-
 import find from 'lodash/find';
 import withRoot from './../../withRoot';
-
 import { Route } from 'react-router-dom'
-
-
-
 import AppDrawer from './AppDrawer';
-
 import { pageToTitle } from './../utils/helpers';
-
 
 const styles = theme => ({
   root: {
@@ -117,7 +108,6 @@ function findActivePage(currentPages, url) {
     if (page.children) {
       return url.pathname.indexOf(page.pathname) === 0;
     }
-
     // Should be an exact match if no children
     return url.pathname === page.pathname;
   });
@@ -147,10 +137,8 @@ class AppFrame extends React.Component {
   };
 
   getChildContext() {
-
     let myurl = {};
     myurl.pathname = this.props.history.location.pathname
-
     return {
       url: myurl ? myurl : null,
       pages,
@@ -165,7 +153,6 @@ class AppFrame extends React.Component {
   handleDrawerClose = () => {
     this.setState({ mobileOpen: false });
   };
-
 
   render() {
     const { children, classes, uiTheme } = this.props;
@@ -211,12 +198,6 @@ class AppFrame extends React.Component {
             )}
 
             <div className={classes.grow} />
-
-
-
-
-
-
           </Toolbar>
         </AppBar>
         <AppDrawer
@@ -240,7 +221,6 @@ class AppFrame extends React.Component {
               component={ShowChapterSection}
             />
         </div>
-
       </div>
     );
   }
