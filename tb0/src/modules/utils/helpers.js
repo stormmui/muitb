@@ -1,13 +1,14 @@
-import warning from 'warning';
+//import warning from 'warning';
 import upperFirst from 'lodash/upperFirst';
 import camelCase from 'lodash/camelCase';
 
 export function titleize(string) {
+/*
   warning(
     typeof string === 'string' && string.length > 0,
     'titleize(string) expects a non empty string argument.',
   );
-
+*/
   return string
     .split('-')
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))

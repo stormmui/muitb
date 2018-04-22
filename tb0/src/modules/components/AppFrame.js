@@ -1,18 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import compose from 'recompose/compose';
 import { withStyles } from 'material-ui/styles';
 import Typography from 'material-ui/Typography';
 import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 import IconButton from 'material-ui/IconButton';
-import Tooltip from 'material-ui/Tooltip';
 import MenuIcon from '@material-ui/icons/Menu';
 import find from 'lodash/find';
 import withRoot from './../../withRoot';
 import { Route } from 'react-router-dom'
 import AppDrawer from './AppDrawer';
-import { pageToTitle } from './../utils/helpers';
+//import { pageToTitle } from './../utils/helpers';
 
 const styles = theme => ({
   root: {
@@ -163,7 +161,7 @@ class AppFrame extends React.Component {
   };
 
   render() {
-    const { children, classes, uiTheme } = this.props;
+    const { classes } = this.props;
 /*
     if (!this.context.activePage) {
       throw new Error('Missing activePage.');
