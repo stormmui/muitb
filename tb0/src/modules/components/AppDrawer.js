@@ -97,6 +97,15 @@ function AppDrawer(props, context) {
 
   const drawer = (
     <div className={classes.nav}>
+      <div className={classes.toolbarIe11}>
+        <div className={classes.toolbar}>
+            <Typography variant="title" color="inherit">
+              Github Data Explorer
+            </Typography>
+            <Typography variant="caption">v0a</Typography>
+        </div>
+      </div>
+      <Divider />
       {renderNavItems({ props, pages: context.pages, activePage: context.activePage, depth: 0 })}
     </div>
   );
